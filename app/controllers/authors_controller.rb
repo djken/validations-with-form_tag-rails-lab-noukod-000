@@ -1,7 +1,6 @@
 class AuthorsController < ApplicationController
   def show
     @author = Author.find(params[:id])
-    redirect_to show_path
   end
 
   def new
